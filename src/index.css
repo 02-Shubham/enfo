@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8B5CF6;
+  --primary-dark: #7C3AED;
+  --secondary: #10B981;
+  --background: #000000;
+  --surface: #111111;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: #fff;
+}
+
+/* Only main headings get the sci-fi font */
+h1, h2 {
+  font-family: 'Audiowide', cursive;
+  letter-spacing: 0.025em;
+}
+
+/* Regular font for smaller headings */
+h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+.glassmorphism {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px var(--primary),
+              0 0 20px var(--primary-dark);
+}
+
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom font styles */
+.font-display {
+  font-family: 'Audiowide', cursive;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
