@@ -1,4 +1,4 @@
-import React from 'react';
+
 import WelcomeHeader from './components/WelcomeHeader';
 import CurrentProgress from './components/CurrentProgress';
 import RecommendedTopics from './components/RecommendedTopics';
